@@ -3,297 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>მანჩესტერ იუნაიტედის განრიგი</title>
-    <link rel="stylesheet" href="style.css">
+    <title>მანჩესტერ იუნაიტედი 2025 მატჩები</title>
     <style>
-        /* Basic styles */
         body {
+            background-color: #d32f2f; /* Red background */
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
         }
+
         h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
-        /* Table container */
-        .table-container {
-            width: 100%;
-            max-width: 1200px; /* Allow the table to expand up to this width on larger screens */
-            overflow-x: auto; /* Enable horizontal scrolling */
-            border: 1px solid #ddd;
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            touch-action: pan-x; /* Enable swipe gesture */
-            -ms-touch-action: pan-x; /* For Internet Explorer/Edge */
-        }
+
         table {
-            width: 100%;
+            width: 80%;
+            margin: 20px auto;
             border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+
         th, td {
             padding: 12px;
             text-align: center;
-            border: 1px solid #ddd;
+            border: 1px solid #fff;
         }
+
         th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #c2185b; /* Darker red for the header */
+            font-size: 1.2em;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
+
+        td {
             background-color: #f1f1f1;
-        }
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 18px; /* Smaller font size for the header */
-            }
-            table {
-                font-size: 12px; /* Smaller font size for better readability on mobile */
-            }
-            th, td {
-                padding: 8px; /* Adjust padding */
-            }
-            .table-container {
-                padding: 10px; /* Add some padding around the table */
-            }
+            color: #333;
+            font-size: 1.1em;
+            font-weight: bold;
         }
 
-        /* Desktop (PC) responsiveness */
-        @media (min-width: 601px) {
-            h1 {
-                font-size: 24px; /* Larger font size for larger screens */
-            }
-            table {
-                font-size: 16px; /* Regular font size for larger screens */
-            }
-            th, td {
-                padding: 12px; /* Regular padding for larger screens */
-            }
+        td:hover {
+            background-color: #e91e63;
+            color: #fff;
         }
 
+        .table-container {
+            max-height: 500px; /* Scrollable height */
+            overflow-y: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            td, th {
+                font-size: 1em;
+                padding: 8px;
+            }
+        }
     </style>
 </head>
 <body>
-    <li><a href="index.html">მთავარი</a></li>
-    <header>
-        <h1>მანჩესტერ იუნაიტედის განრიგი</h1>
-    </header>
-    <section>
-        <div class="table-container" id="swipable-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>თარიღი</th>
-                        <th>მატჩი</th>
-                        <th>დრო</th>
-                        <th>კონკურსი</th>
-                        <th>ტელევიზია</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- January 2025 -->
-                    <tr>
-                        <td>კვი, 5 იანვარი</td>
-                        <td>ლივერპული v მანჩესტერ იუნაიტედი</td>
-                        <td>8:30 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 12 იანვარი</td>
-                        <td>არსენალი v მანჩესტერ იუნაიტედი</td>
-                        <td>7:00 PM</td>
-                        <td>ინგლისის FA თასი</td>
-                        <td>ESPN+</td>
-                    </tr>
-                    <tr>
-                        <td>პარ, 17 იანვარი</td>
-                        <td>მანჩესტერ იუნაიტედი v სოტონჰემპტონი</td>
-                        <td>12:00 AM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 19 იანვარი</td>
-                        <td>მანჩესტერ იუნაიტედი v ბრაიტონი & ჰოვი ალბიონი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>პარ, 24 იანვარი</td>
-                        <td>მანჩესტერ იუნაიტედი v რენჯერსი</td>
-                        <td>12:00 AM</td>
-                        <td>UEFA ევროპის ლიგა</td>
-                        <td>Paramount+</td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 26 იანვარი</td>
-                        <td>ფულჰემი v მანჩესტერ იუნაიტედი</td>
-                        <td>11:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>პარ, 31 იანვარი</td>
-                        <td>FCSB v მანჩესტერ იუნაიტედი</td>
-                        <td>12:00 AM</td>
-                        <td>UEFA ევროპის ლიგა</td>
-                        <td>Paramount+</td>
-                    </tr>
-                    
-                    <!-- February 2025 -->
-                    <tr>
-                        <td>კვი, 2 თებერვალი</td>
-                        <td>მანჩესტერ იუნაიტედი v კრისტალ პალასი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 16 თებერვალი</td>
-                        <td>ტოტენჰემი v მანჩესტერ იუნაიტედი</td>
-                        <td>8:30 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 22 თებერვალი</td>
-                        <td>ევერტონი v მანჩესტერ იუნაიტედი</td>
-                        <td>4:30 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>ხუთ, 27 თებერვალი</td>
-                        <td>მანჩესტერ იუნაიტედი v იფსვიჩი</td>
-                        <td>12:00 AM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
 
-                    <!-- March 2025 -->
-                    <tr>
-                        <td>შაბ, 8 მარტი</td>
-                        <td>მანჩესტერ იუნაიტედი v არსენალი</td>
-                        <td>7:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 15 მარტი</td>
-                        <td>ლეიჩესტერი v მანჩესტერ იუნაიტედი</td>
-                        <td>7:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
+    <h1>მანჩესტერ იუნაიტედი - 2025 წლის მატჩები</h1>
 
-                    <!-- April 2025 -->
-                    <tr>
-                        <td>ხომ, 1 აპრილი</td>
-                        <td>ნოტინგემ ფორესტი v მანჩესტერ იუნაიტედი</td>
-                        <td>10:45 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 5 აპრილი</td>
-                        <td>მანჩესტერ იუნაიტედი v მანჩესტერ სიტი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 12 აპრილი</td>
-                        <td>ნიუკასლი v მანჩესტერ იუნაიტედი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 19 აპრილი</td>
-                        <td>მანჩესტერ იუნაიტედი v ვულვერჰემპტონი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 26 აპრილი</td>
-                        <td>AFC ბორნმუთი v მანჩესტერ იუნაიტედი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>თარიღი</th>
+                    <th>მატჩი</th>
+                    <th>დრო</th>
+                    <th>კონკურსი</th>
+                    <th>TV</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>იანვარი 5</td>
+                    <td>ლივერპული v მანჩესტერ იუნაიტედი</td>
+                    <td>8:30 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>იანვარი 12</td>
+                    <td>არსენალი v მანჩესტერ იუნაიტედი</td>
+                    <td>7:00 PM</td>
+                    <td>ინგლისის FA თასი</td>
+                    <td>ESPN+</td>
+                </tr>
+                <tr>
+                    <td>იანვარი 17</td>
+                    <td>მანჩესტერ იუნაიტედი v საუთჰემპტონი</td>
+                    <td>12:00 AM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>იანვარი 19</td>
+                    <td>მანჩესტერ იუნაიტედი v ბრაიტონი & ჰოვ ალბიონი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>იანვარი 24</td>
+                    <td>მანჩესტერ იუნაიტედი v რენჯერსი</td>
+                    <td>12:00 AM</td>
+                    <td>UEFA ევროპა ლიგა</td>
+                    <td>Paramount+</td>
+                </tr>
+                <tr>
+                    <td>იანვარი 26</td>
+                    <td>ფულჰემი v მანჩესტერ იუნაიტედი</td>
+                    <td>11:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>იანვარი 31</td>
+                    <td>FCSB v მანჩესტერ იუნაიტედი</td>
+                    <td>12:00 AM</td>
+                    <td>UEFA ევროპა ლიგა</td>
+                    <td>Paramount+</td>
+                </tr>
+                <tr>
+                    <td>თებერვალი 2</td>
+                    <td>მანჩესტერ იუნაიტედი v კრისტალ პალასი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თებერვალი 16</td>
+                    <td>ტოტენჰემ ჰოთსპური v მანჩესტერ იუნაიტედი</td>
+                    <td>8:30 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თებერვალი 22</td>
+                    <td>ევერტონი v მანჩესტერ იუნაიტედი</td>
+                    <td>4:30 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თებერვალი 27</td>
+                    <td>მანჩესტერ იუნაიტედი v იპსვიჩი</td>
+                    <td>12:00 AM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მარტი 8</td>
+                    <td>მანჩესტერ იუნაიტედი v არსენალი</td>
+                    <td>7:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მარტი 15</td>
+                    <td>ლესტერი სითი v მანჩესტერ იუნაიტედი</td>
+                    <td>7:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>აპრილი 1</td>
+                    <td>ნოტინგჰემ ფორესტი v მანჩესტერ იუნაიტედი</td>
+                    <td>10:45 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>აპრილი 5</td>
+                    <td>მანჩესტერ იუნაიტედი v მანჩესტერ სიტი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>აპრილი 12</td>
+                    <td>ნიუკასლი იუნაიტედი v მანჩესტერ იუნაიტედი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>აპრილი 19</td>
+                    <td>მანჩესტერ იუნაიტედი v ვულვერჰემპტონი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>აპრილი 26</td>
+                    <td>AFC ბორნმუთი v მანჩესტერ იუნაიტედი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მაისი 3</td>
+                    <td>ბრენტფორდი v მანჩესტერ იუნაიტედი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მაისი 10</td>
+                    <td>მანჩესტერ იუნაიტედი v ვესტ ჰემ იუნაიტედი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მაისი 18</td>
+                    <td>ჩელსი v მანჩესტერ იუნაიტედი</td>
+                    <td>6:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მაისი 25</td>
+                    <td>მანჩესტერ იუნაიტედი v ასტონ ვილა</td>
+                    <td>7:00 PM</td>
+                    <td>ინგლისის პრემიერლიგა</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-                    <!-- May 2025 -->
-                    <tr>
-                        <td>შაბ, 3 მაისი</td>
-                        <td>ბრენტფორდი v მანჩესტერ იუნაიტედი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>შაბ, 10 მაისი</td>
-                        <td>მანჩესტერ იუნაიტედი v უესტ ჰემი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 18 მაისი</td>
-                        <td>ჩელსი v მანჩესტერ იუნაიტედი</td>
-                        <td>6:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>კვი, 25 მაისი</td>
-                        <td>მანჩესტერ იუნაიტედი v ასტონ ვილა</td>
-                        <td>7:00 PM</td>
-                        <td>ინგლისის პრემიერ ლიგა</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <footer>© 2025 ყველა უფლება დაცულია</footer>
-
-    <script>
-        // Add swipe functionality for the mobile/tablet view
-        let startX;
-        let startScrollLeft;
-
-        const tableContainer = document.getElementById('swipable-table');
-
-        tableContainer.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].pageX;
-            startScrollLeft = tableContainer.scrollLeft;
-        });
-
-        tableContainer.addEventListener('touchmove', (e) => {
-            if (startX === undefined) return;
-
-            let moveX = e.touches[0].pageX;
-            let scrollDifference = startX - moveX;
-            tableContainer.scrollLeft = startScrollLeft + scrollDifference;
-        });
-
-        tableContainer.addEventListener('touchend', () => {
-            startX = undefined;
-            startScrollLeft = undefined;
-        });
-    </script>
 </body>
 </html>
