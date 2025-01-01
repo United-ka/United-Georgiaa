@@ -6,6 +6,7 @@
     <title>მანჩესტერ იუნაიტედის განრიგი</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Basic styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -14,20 +15,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
         }
+        /* Table container */
         .table-container {
             width: 100%;
-            height: 400px; /* Set fixed height for scroll */
-            overflow-y: auto; /* Enable vertical scrolling */
+            max-width: 1200px; /* Allow the table to expand up to this width on larger screens */
+            overflow-x: auto; /* Enable horizontal scrolling */
             border: 1px solid #ddd;
             background-color: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            touch-action: pan-x; /* Enable swipe gesture */
+            -ms-touch-action: pan-x; /* For Internet Explorer/Edge */
         }
         table {
             width: 100%;
@@ -48,9 +52,35 @@
         tr:hover {
             background-color: #f1f1f1;
         }
-        .team-name {
-            text-align: left;
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 18px; /* Smaller font size for the header */
+            }
+            table {
+                font-size: 12px; /* Smaller font size for better readability on mobile */
+            }
+            th, td {
+                padding: 8px; /* Adjust padding */
+            }
+            .table-container {
+                padding: 10px; /* Add some padding around the table */
+            }
         }
+
+        /* Desktop (PC) responsiveness */
+        @media (min-width: 601px) {
+            h1 {
+                font-size: 24px; /* Larger font size for larger screens */
+            }
+            table {
+                font-size: 16px; /* Regular font size for larger screens */
+            }
+            th, td {
+                padding: 12px; /* Regular padding for larger screens */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -59,7 +89,7 @@
         <h1>მანჩესტერ იუნაიტედის განრიგი</h1>
     </header>
     <section>
-        <div class="table-container">
+        <div class="table-container" id="swipable-table">
             <table>
                 <thead>
                     <tr>
@@ -239,5 +269,31 @@
         </div>
     </section>
     <footer>© 2025 ყველა უფლება დაცულია</footer>
+
+    <script>
+        // Add swipe functionality for the mobile/tablet view
+        let startX;
+        let startScrollLeft;
+
+        const tableContainer = document.getElementById('swipable-table');
+
+        tableContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX;
+            startScrollLeft = tableContainer.scrollLeft;
+        });
+
+        tableContainer.addEventListener('touchmove', (e) => {
+            if (startX === undefined) return;
+
+            let moveX = e.touches[0].pageX;
+            let scrollDifference = startX - moveX;
+            tableContainer.scrollLeft = startScrollLeft + scrollDifference;
+        });
+
+        tableContainer.addEventListener('touchend', () => {
+            startX = undefined;
+            startScrollLeft = undefined;
+        });
+    </script>
 </body>
 </html>
