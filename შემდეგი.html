@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United-იუნაიტედი</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .countdown-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid #dd4b39;
+            width: 350px;
+        }
+        .match-details {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .match-details img {
+            width: 80px;
+            height: auto;
+            margin: 10px 20px;
+        }
+        .countdown {
+            font-size: 30px;
+            font-weight: bold;
+            color: #dd4b39;  /* Main color */
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .countdown p {
+            font-size: 22px;
+            margin: 5px 0;
+        }
+        .match-details p {
+            color: #4CAF50;  /* Green color for details */
+        }
+        .countdown .highlight {
+            color: #ff5722;  /* Highlighted color */
+        }
+        .countdown {
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        .countdown span {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="countdown-container">
+        <div class="match-details">
+            <div><li><a href="index.html">მთავარი</a></li>
+                <img src="liverpool.jpg" alt="Liverpool Logo">
+                <p>ლივერპული vs მანჩესტერ იუნაიტედი</p>
+                <img src="ManchesterU.png" alt="Manchester United Logo">
+            </div>
+            <p>სტადიონი: ენფილდი</p>
+            <p>თარიღი: 5 იანვარი, 2025</p>
+        </div>
+        <div class="countdown" id="countdown">
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const matchDate = new Date("2025-01-05T20:30:00+00:00");
+            const now = new Date();
+            const diff = matchDate - now;
+
+            if (diff <= 0) {
+                document.getElementById("countdown").innerHTML = "<span class='highlight'>მატჩი დაიწყო!</span>";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = 
+                `<span>${days} დღე</span><span>${hours} საათი</span><span>${minutes} წუთი</span><span>${seconds} წამი</span>`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
