@@ -1,11 +1,9 @@
-html{
-    background-color: red;
-   
-}
+
 
 h1{
     font-style: italic;
    flex: none;
+   color: #ffffff;
    
 }
 

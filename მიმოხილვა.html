@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>United-იუნაიტედი</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #d10000;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 16px;
+        }
+        section {
+            padding: 80px 20px 20px; /* Added top padding to avoid header overlap */
+        }
+        .game-highlight {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .game-highlight h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .game-highlight video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #d10000;
+            color: white;
+            margin-top: 30px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header p {
+                font-size: 14px;
+            }
+            .game-highlight h2 {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+            .game-highlight h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <li><a href="index.html">მთავარი</a></li>
+        <h1>მანჩესტერ იუნაიტედის თამაშების მიმოხილვა</h1>
+        <p>მანჩესტერ იუნაიტედის ბოლო მატჩების მიმოხილვები</p>
+    </header>
+
+    <section>
+        <div class="game-highlight">
+            <h2>მანჩესტერ იუნაიტედი V ნიუკასლი</h2>
+            <video controls="" src="Defeat At Old Trafford  (1).mp4"></video>
+        </div>
+
+        <div class="game-highlight">
+            <h2>მანჩესტერ იუნაიტედი v ვულზი</h2>
+            <video controls="" src="United stunned at Molineux! .mp4"></video>
+        </div>
+
+        <div class="game-highlight">
+            <h2>მანჩესტერ იუნაიტედი V ბორმუთი</h2>
+            <video controls="" src="Defeat At Old Trafford .mp4"></video>
+        </div>
+
+        <!-- Add more games as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 მანჩესტერ იუნაიტედის ჰაილაითები</p>
+    </footer>
+</body>
+</html>
