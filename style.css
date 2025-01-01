@@ -146,3 +146,47 @@ body {
     }
 }
 
+/* Basic styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styling for mobile screens */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+    
+    th, td {
+        padding: 6px; /* Reduce padding for small screens */
+    }
+
+    /* Make the table scrollable horizontally if needed */
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px; /* Ensure minimum width to prevent it from being squished */
+    }
+}
+
+/* Larger screen (tablet and desktop) */
+@media screen and (min-width: 769px) {
+    table {
+        font-size: 16px; /* Larger font for desktop/tablets */
+    }
+}
+
