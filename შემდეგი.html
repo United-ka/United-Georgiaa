@@ -72,13 +72,14 @@
     <div class="countdown-container">
         <div class="match-details">
             <div><li><a href="index.html">მთავარი</a></li>
-                <img src="liverpool.jpg" alt="Liverpool Logo">
-                <p>ლივერპული vs მანჩესტერ იუნაიტედი</p>
+                <img src="Arsenal.png" alt="Arsenal Logo">
+                <p>არსენალი vs მანჩესტერ იუნაიტედი</p>
                 <img src="ManchesterU.png" alt="Manchester United Logo">
             </div>
-            <p>სტადიონი: ენფილდი</p>
-            <p>თარიღი: 5 იანვარი, 2025</p>
+            <p>სტადიონი: ემირეითსი</p>
+            <p>თარიღი: 12 იანვარი, 2025</p> <!-- Updated date -->
         </div>
+        
         <div class="countdown" id="countdown">
             <span>Loading...</span>
         </div>
@@ -86,8 +87,8 @@
 
     <script>
         function updateCountdown() {
-            // Set the match date and time in UTC, which we will convert to UTC+4 (Georgian Time)
-            const matchDate = new Date(Date.UTC(2025, 0, 5, 16, 30)); // UTC time is 2025-01-05 16:30
+            // Set the match date and time to 12th January 2025 at 19:00 (7:00 PM)
+            const matchDate = new Date(Date.UTC(2025, 0, 12, 16, 0)); // UTC time is 2025-01-12 16:00 (Georgian Time will be UTC+4)
             const now = new Date();
             const diff = matchDate - now;
 
