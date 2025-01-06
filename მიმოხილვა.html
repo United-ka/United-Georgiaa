@@ -75,29 +75,60 @@
                 font-size: 18px;
             }
         }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #d50032;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .video-container {
+                justify-content: flex-start;
+            }
+            nav {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <li><a href="index.html">მთავარი</a></li>
+        
+        <nav><li><a href="index.html">მთავარი</a></li> </nav>
         <h1>მანჩესტერ იუნაიტედის თამაშების მიმოხილვა</h1>
-        <p>მანჩესტერ იუნაიტედის ბოლო მატჩების მიმოხილვები</p>
+       
     </header>
 
     <section>
         <div class="game-highlight">
+            <h2>ლივერპული V მანჩესტერ იუნაიტედი</h2>
+            <video controls="" src="United Until The Very End! 👊 .mp4"></video>
+        </div>
+
+        <div class="game-highlight">
             <h2>მანჩესტერ იუნაიტედი V ნიუკასლი</h2>
             <video controls="" src="Defeat At Old Trafford  (1).mp4"></video>
-        </div>
 
         <div class="game-highlight">
             <h2>მანჩესტერ იუნაიტედი v ვულზი</h2>
             <video controls="" src="United stunned at Molineux! .mp4"></video>
-        </div>
-
-        <div class="game-highlight">
-            <h2>მანჩესტერ იუნაიტედი V ბორმუთი</h2>
-            <video controls="" src="Defeat At Old Trafford .mp4"></video>
         </div>
 
         <!-- Add more games as needed -->

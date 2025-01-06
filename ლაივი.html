@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>United-იუნაიტედი</title>
 </head>
-<li><a href="index.html">მთავარი</a></li>
+<nav><li><a href="index.html">მთავარი</a></li></nav>
 <h1>თამაშის ლინკი 10 წუთით ადრე დაიდება თამაშის დაწყებიდან </h1>
 <body>
-   
+   <style>
+            nav {
+            position: sticky;
+            top: 0;
+            background-color: #d50032;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .video-container {
+                justify-content: flex-start;
+            }
+            nav {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+   </style>
 </body>
 </html>
